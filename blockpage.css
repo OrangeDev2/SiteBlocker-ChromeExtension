@@ -1,0 +1,10 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+#title {
+    color: red;
+    text-align: center;
+    margin-top: 50%;
+}

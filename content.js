@@ -7,8 +7,7 @@ console.log('Hello! Content.js')
 const url = window.location.href
 
 if (url === siteBlock[0]){
-    console.log('after if')
+    console.log(url)
 
-    const body = document.body;
-    body.innerHTML = "<h1>You chose to block Youtube.com!</h1>"
+    chrome.runtime.sendMessage({redirect: "chrome-extension://ommknfecagpdllighpjcighiikgmgclf/blockedpage.html"});
 }
