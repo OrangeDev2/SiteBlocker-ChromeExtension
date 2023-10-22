@@ -4,7 +4,7 @@
     "description": "Block Sites like Youtube",
     "version": "1.0",
     "action": {
-      "default_popup": "popup.html"
+      "default_popup": "./popup/popup.html"
     },
     "background": {
         "service_worker": "background.js"
@@ -15,5 +15,5 @@
           "js": ["content.js"]
         }
       ],
-      "permissions": ["scripting", "activeTab"]
+      "permissions": ["tabs", "activeTab", "storage"]
   }
